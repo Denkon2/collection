@@ -1,0 +1,159 @@
+.home-carousel {
+  position: relative;
+  padding-top: 95px;
+  padding-bottom: 95px;
+  &__owl {
+    position: relative;
+    justify-content: end;
+    //padding-left: 17%;
+  }
+  &__pic {
+    width: 100%;
+    max-width: 588px;
+    &::after {
+      padding-top: 80%;
+    }
+  }
+  &__nav{
+    &-items{
+      min-height: 45px;
+      display: flex;
+      gap: 0 10px;
+      align-items: flex-end;
+    }
+  }
+}
+.home-banner{
+    position: relative;
+    //background: url(../assets/images/home-carousel/Union.png) no-repeat left top;
+    //background-size: contain;
+    max-width: 1614.4599609375px;
+    //padding-right: 14.5%;
+    grid-template-columns: 365px auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "col1 col2"
+    //"col3 col3"
+    ;
+
+    @media @bw1660{
+      grid-template-columns: 290px auto;
+    }
+
+    &::after{
+      content: "";
+      display: none;
+      padding-top: 42.6%;
+    }
+    &::before{
+      content: "";
+      display: block;
+      position: absolute;
+      left: 334px;
+      top: 0;
+      width: 2000px;
+      height: 2px;
+      background-color: #111;
+      @media @bw1660{
+        left: 261px;
+      }
+    }
+    &__col {
+      position: relative;
+      .d-flex();
+    }
+    &__col1{
+      grid-area: col1;
+      display: flex;
+      flex-direction: column;
+      border-right: 11px solid #111;
+      z-index: 1;
+    }
+    &__col2{
+      grid-area: col2;
+      padding-top: 22px;
+      padding-bottom: 102px;
+      z-index: 1;
+      padding-left: 3%;
+      margin-top: 5px;
+      //max-width: 57.5%;
+    }
+    &__col3{
+      grid-area: col2;
+      font-family: @font3;
+      font-size: 22px;
+      font-weight: 600;
+      justify-content: end;
+      max-width: 300px;
+      padding-top: 24px;
+      margin-left: auto;
+      margin-right: 0;
+      z-index: 1;
+      a{
+        transition: all 0.2s ease;
+        color: @black;
+        text-decoration: none;
+        display: inline-block;
+        &.active{
+          font-size: 30px;
+        }
+        &:hover, &.active{
+          color: @green;
+        }
+      }
+      a ~ a{
+        margin-left: 25px;
+      }
+    }
+    &__col4{
+      grid-area: col2;
+      //margin-top: -141px;
+      justify-content: end;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      width: 100%;
+    }
+    &__top-text, &__bottom-text{
+      display: flex;
+      color: transparent;
+      letter-spacing: 1px;
+      position: relative;
+    }
+    &__top-text{
+      /* background: url(../assets/images/home-carousel/Union.png) no-repeat 0 0;
+      width: 240px;
+      height: 170px; */
+      overflow: hidden;
+      width: 235px;
+      max-width: 100%;
+      height: 126px;
+      margin-left: auto;
+      margin-right: 31px;
+      @media @bw1660{
+        margin-left: 13px;
+        margin-right: auto;
+      }
+    }
+    &__bottom-text{
+      width: 100%;
+      max-width: 847px;
+      height: 143px;
+    }
+    .home-banner__collection{
+      margin-top: auto;
+      margin-bottom: 0;
+      margin-left: 42px;
+      @media @bw1660{
+        margin-left: 0;
+      }
+    }
+}
+
+.collection{
+
+  &__title{
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+}

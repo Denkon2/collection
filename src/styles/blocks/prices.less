@@ -1,0 +1,29 @@
+.prices {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  &__price {
+    font-size: 20px;
+    font-weight: 600;
+    span {
+    }
+  }
+  &__oldprice {
+    font-size: 70%;
+    color: #ddd;
+    position: relative;
+    &::after{
+        content: "";
+        left: 0;
+        top: 49%;
+        height: 1px;
+        width: 100%;
+        border-top: 1px solid;
+        position: absolute;
+        z-index: 1;
+    }
+    span {
+    }
+  }
+}

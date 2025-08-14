@@ -1,0 +1,28 @@
+@@include('blocks/head.html')
+
+<body class="body">
+    @@include('blocks/header.html', {'auth': true})
+
+    <div class="container-in">@@include('blocks/breadcrumbs.html')</div>
+
+    <main class="main">
+        <div class="container-in">
+            <h1 class="title page-title">Каталог</h1>
+            <button class="btn-open-filter js-open-filter btn w-100">Фильтр</button>
+            <button type="reset" class="btn-reset-filter">Сбросить</button>
+            <div class="page page-listing">
+                <div class="page-listing__aside">
+                    @@include('blocks/sidebar.html')
+                </div>
+                <div class="page-listing__content">@@include('blocks/products/listing.html', {
+                    'class': 'products-listing',
+                    'class__items': 'products-listing__items',
+                    })
+                    @@include('blocks/pagination.html')
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main -->
+
+    @@include('blocks/footer.html')

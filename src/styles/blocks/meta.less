@@ -1,0 +1,25 @@
+.meta {
+  .d-flex();
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    display: inline-flex;
+    @media @bw1340{
+      max-width: 76px;
+    }
+  }
+  &__pic {
+    &::after{
+      display: none;
+    }
+    img{
+      position: static;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__author{
+    font-size: 16px;
+  }
+}

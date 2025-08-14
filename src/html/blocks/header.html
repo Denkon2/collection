@@ -1,0 +1,86 @@
+<header class="header">
+    <div class="container header__container">
+        <div class="header__nav nav">
+            <ul class="header__nav-items nav__items">
+                <li class="header__nav-item nav__item">
+                    <span class="header__nav-ico svg-ico">
+                        <svg class="page-header__nav-logout-icon" width="24" height="24">
+                            <use xlink:href="assets/icons/symbols.svg#menu-ico"></use>
+                        </svg>
+                    </span>
+                    <a href="listing.html" class="header__nav-link nav__item-link">
+                        <span>Каталог</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="/" class="header__logo logo">
+            <img src="/assets/images/logo.png" alt="logo" class="header_logo-img logo-img">
+        </a>
+        <div class="header__toggle-menu js-toogle-menu">
+            <span class="svg-ico">
+                <svg>
+                    <use xlink:href="assets/icons/symbols.svg#toggle-menu"></use>
+                </svg>
+            </span>
+        </div>
+        <div class="header__right">
+            @@if (auth === false) {
+            <a href="#" class="header__right-link svg-ico">
+                <svg width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#heart"></use>
+                </svg>
+                <span class="header__right-text">Избранное</span>
+            </a>
+            <a href="#" class="header__right-link svg-ico">
+                <svg width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#cart"></use>
+                </svg>
+                <span class="header__right-text">Корзина</span>
+            </a>
+            <a href="page-reg.html" class="header__right-link svg-ico">
+                <svg width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#log-in"></use>
+                </svg>
+                <span class="header__right-text">Личный кабинет</span>
+            </a>
+            }
+            @@if (auth === true) {
+            <a href="#" class="header__right-link svg-ico">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11.995 7.2332C10.5455 5.61 8.12832 5.17336 6.31215 6.65973C4.49599 8.1461 4.2403 10.6312 5.66654 12.3892L11.995 18.25L18.3235 12.3892C19.7498 10.6312 19.5253 8.13047 17.6779 6.65973C15.8305 5.189 13.4446 5.61 11.995 7.2332Z"
+                        fill="#0154BB" stroke="#0154BB" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span class="header__right-text">Избранное</span>
+                <span class="count">3</span>
+            </a>
+            <a href="#" class="header__right-link svg-ico">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75Z"
+                        fill="#0154BB" />
+                    <path
+                        d="M7.75 7.75H19.25L17.6128 14.7081C17.4002 15.6115 16.5941 16.25 15.666 16.25H11.5395C10.632 16.25 9.83827 15.639 9.60606 14.7618L7.75 7.75ZM7.75 7.75L7 4.75H4.75"
+                        stroke="#0154BB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M10 20C10.5523 20 11 19.5523 11 19C11 18.4477 10.5523 18 10 18C9.44772 18 9 18.4477 9 19C9 19.5523 9.44772 20 10 20Z"
+                        fill="#0154BB" />
+                    <path
+                        d="M17 20C17.5523 20 18 19.5523 18 19C18 18.4477 17.5523 18 17 18C16.4477 18 16 18.4477 16 19C16 19.5523 16.4477 20 17 20Z"
+                        fill="#0154BB" />
+                </svg>
+                <span class="header__right-text">Корзина</span>
+                <span class="count">10</span>
+            </a>
+            <a href="#" class="header__right-link svg-ico">
+                <svg class="page-header__nav-logout-icon" width="24" height="24">
+                    <use xlink:href="assets/icons/symbols.svg#logout"></use>
+                </svg>
+                <span class="header__right-text">Личный кабинет</span>
+            </a>
+            }
+        </div>
+    </div>
+</header><!-- header -->

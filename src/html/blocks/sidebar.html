@@ -1,0 +1,108 @@
+<form action="#" class="form form-filter">
+    
+    <div class="form-filter__body">
+        <button class="form-filter__close-filter js-close-filter svg-ico">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.25 6.75L6.75 17.25" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path d="M6.75 6.75L17.25 17.25" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="form-filter__hidden-title title">
+            Фильтр
+           <button type="reset" class="form-filter__reset-filter js-reset-filter">Фильтр</button>
+        </div>
+        <fieldset class="form-filter__group">
+            <legend>Коллекция</legend>
+            <label class="check form-filter__check">
+                <input type="checkbox" name="agree" class="check__input is-hidden">
+                <span class="check__mark"></span>
+                <span class="check__label check__label--s">
+                    1982 года
+                </span>
+            </label>
+            <label class="check form-filter__check">
+                <input type="checkbox" name="agree" class="check__input is-hidden" checked>
+                <span class="check__mark"></span>
+                <span class="check__label check__label--s">
+                    1986 года
+                </span>
+            </label>
+            <label class="check form-filter__check">
+                <input type="checkbox" name="agree" class="check__input is-hidden">
+                <span class="check__mark"></span>
+                <span class="check__label check__label--s">
+                    1987 года
+                </span>
+            </label>
+            <label class="check form-filter__check">
+                <input type="checkbox" name="agree" class="check__input is-hidden">
+                <span class="check__mark"></span>
+                <span class="check__label check__label--s">
+                    1988 года
+                </span>
+            </label>
+            <label class="check form-filter__check">
+                <input type="checkbox" name="agree" class="check__input is-hidden">
+                <span class="check__mark"></span>
+                <span class="check__label check__label--s">
+                    1989 года
+                </span>
+            </label>
+        </fieldset>
+        <fieldset class="form-filter__group">
+            <legend>Наличие</legend>
+            <div class="radio">
+                <label class="radio__item">
+                    <input class="radio__input is-hidden" type="radio" name="format" value="seminar" checked>
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">В наличие</span>
+                </label>
+
+                <label class="radio__item">
+                    <input class="radio__input is-hidden" type="radio" name="format" value="concert">
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">Под заказ</span>
+                </label>
+
+                <label class="radio__item">
+                    <input class="radio__input is-hidden" type="radio" name="format" value="concert">
+                    <span class="radio__mark"></span>
+                    <span class="radio__label">Все</span>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset class="form-filter__group">
+            <legend>Ориентация</legend>
+            <label class="check form-filter__check">
+                <input type="checkbox" name="or-1" class="check__input is-hidden">
+                <span class="check__mark"></span>
+                <span class="check__label check__label--s">
+                    Книжная
+                </span>
+            </label>
+            <label class="check form-filter__check">
+                <input type="checkbox" name="or-2" class="check__input is-hidden">
+                <span class="check__mark"></span>
+                <span class="check__label check__label--s">
+                    Альбомная
+                </span>
+            </label>
+        </fieldset>
+        <fieldset class="form-filter__group form-filter__group-slider">
+            <legend>Цена, ₽</legend>
+            <div class="check form-filter__check" id="js-slider">
+                <div id="slider-range"></div>
+                <div class="amount-range" id="amount">
+                    <span class="t1"></span>
+                    <span class="t2"></span>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form__footer form-filter__footer">
+            <div class="form-filter-submit"><button type="submit" class="btn form-filter__btn">Применить</button></div>
+            <div class="form-filter-reset"><button type="reset" class="form-filter__reset">Сбросить</button></div>
+        </div>
+    </div>
+</form>

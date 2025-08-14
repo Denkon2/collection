@@ -1,0 +1,39 @@
+@@include('blocks/head.html')
+
+<body class="body">
+  @@include('blocks/header.html', {'auth': false})
+
+  <!-- <div class="container">@@include('blocks/search.html')</div> -->
+
+  <main class="main">
+    <div class="home">
+
+      <section class="home-hero">
+        <div class="container">@@include('blocks/home-category.html')</div>
+      </section>
+
+      <section class="section-article">
+        <div class="container">
+          @@include('blocks/home-article.html', {
+          'class': 'home-article'
+          })
+        </div>
+      </section>
+
+      <section class="home-popular popular">
+          @@include('blocks/home-slider.html', {
+            'class': 'popular__posts home__posts',
+            'title': 'Популярные постеры',
+          })
+      </section>
+
+      <section class="section-contacts contacts">
+          <div class="container">@@include('blocks/contacts.html')</div>
+      </section>
+
+
+    </div>
+  </main>
+  <!-- main -->
+
+  @@include('blocks/footer.html')
